@@ -1,6 +1,6 @@
 connection: "project_equipe_8_adeo_connexion"
 
-include: "/views/**/*.view.lkml" # include all views in the views/ folder in this project
+# include: "/views/**/*.view.lkml" # include all views in the views/ folder in this project
 # include: "/**/*.view.lkml"                 # include all views in this project
 # include: "my_dashboard.dashboard.lookml"   # include a LookML dashboard called my_dashboard
 
@@ -19,4 +19,9 @@ include: "/views/**/*.view.lkml" # include all views in the views/ folder in thi
 #   }
 # }
 
-explore: home_index {}
+include: "/explore/explore_scores.explore.lkml"
+include: "/explore/explore_sites.explore.lkml"
+
+include: "/dashboard/Sites.dashboard.lookml"
+
+# explore: home_index {}:
